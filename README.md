@@ -1,5 +1,11 @@
 # news-image-20261124: "Tuesday 24 November 2026"
 
+[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/0xnewbiewhermes/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/0xnewbiewhermes/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+
+Bounty: [make.fun · news-image-20261124](https://make.fun/bounty/news-image-20261124)
+
 One front-page image (`entry.png`, 1024 x 1024 PNG) that sums up the news of
 Tuesday 24 November 2026. `main.ts` copies the image to `MAKEFUN_OUTPUT_DIR`.
 `tools/render_front_page.py` draws the page from `tools/stories.json`, and
