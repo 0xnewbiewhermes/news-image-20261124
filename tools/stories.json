@@ -1,0 +1,143 @@
+{
+  "date": "Tuesday 24 November 2026",
+  "note": "Every item is an event that happened or was first reported on 24 November 2026. Each source has its date: the article timestamp, the photo caption or dateline, or the date in the URL when the page could not be read.",
+  "leads": [
+    {
+      "n": 1, "region": "EUROPE", "keyword": "UKRAINE", "scene": "ukraine",
+      "detail": "2 killed, dozens hurt", "lon": 35.1, "lat": 47.8,
+      "title": "Russian strike on Zaporizhzhia flats: 2 killed, dozens wounded",
+      "sources": [
+        {"outlet": "AP", "when": "24 Nov 2026, 11:00 UTC", "url": "https://apnews.com/article/russia-ukraine-libya-sea-drone-attacks-bfff959fb4c7415f9473b34e78a4f750"},
+        {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/russian-attack-kills-2-people-wounds-22-ukraines-zaporizhzhia-official-says-2026-11-24/"}
+      ]
+    },
+    {
+      "n": 2, "region": "ASIA", "keyword": "BANGLADESH", "scene": "bangladesh",
+      "detail": "Hasina plans return 16 Dec", "lon": 90.4, "lat": 23.8,
+      "title": "Ex-PM Sheikh Hasina plans to return to Dhaka on 16 December",
+      "sources": [
+        {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/asia-pacific/sheikh-hasina-seeks-return-bangladesh-december-16-state-carrier-2026-11-24/"},
+        {"outlet": "BBC", "when": "24 Nov 2026, 06:23 UTC", "url": "https://www.bbc.com/news/articles/c60rk1yj07xeo"},
+        {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/sheikh-hasina-plans-to-return-to-bangladesh-from-exile-on-december-16"}
+      ]
+    },
+    {
+      "n": 3, "region": "MIDEAST", "keyword": "GAZA", "scene": "gaza",
+      "detail": "Hamas security chief killed", "lon": 34.5, "lat": 31.5,
+      "title": "Israeli airstrike kills Hamas internal-security chief Naeem Abu Nahel in Gaza City",
+      "sources": [
+        {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-senior-hamas-security-official-gaza-hamas-sources-say-2026-11-24/"},
+        {"outlet": "BBC", "when": "24 Nov 2026, 15:35 UTC", "url": "https://www.bbc.com/news/articles/c6rrg7ggq190o"}
+      ]
+    },
+    {
+      "n": 4, "region": "EUROPE", "keyword": "TURKEY", "scene": "turkey",
+      "detail": "5 crew killed in crash", "lon": 30.5, "lat": 39.8,
+      "title": "Turkish Air Force AS-532 helicopter crashes in training flight near Eskisehir: 5 crew killed",
+      "sources": [
+        {"outlet": "AP", "when": "24 Nov 2026, 18:37 UTC", "url": "https://apnews.com/article/turkey-military-helicopter-crash-eskisehir-d807011ff565dcfbce78fcf44d338994"},
+        {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/turkish-military-helicopter-crash-kills-five-in-western-turkiye"}
+      ]
+    },
+    {
+      "n": 5, "region": "AFRICA", "keyword": "AFRICA CUP", "scene": "afcon",
+      "detail": "Senegal's title restored", "lon": -17.4, "lat": 14.7,
+      "title": "Court of Arbitration for Sport restores Senegal's 2025 Africa Cup of Nations title",
+      "sources": [
+        {"outlet": "AP", "when": "24 Nov 2026, 14:24 UTC", "url": "https://apnews.com/article/africa-cup-final-afcon-senegal-morocco-cas-d3804e3923ec1b7e5ca846806e8d6040"},
+        {"outlet": "BBC Sport", "when": "24 Nov 2026, 14:26 UTC", "url": "https://www.bbc.com/sport/football/articles/crn80y2l1404o"}
+      ]
+    },
+    {
+      "n": 6, "region": "AMERICAS", "keyword": "COLOMBIA", "scene": "colombia",
+      "detail": "Cartagena supermarket siege", "lon": -75.5, "lat": 10.4,
+      "title": "Armed men hold hostages in a Cartagena (Colombia) supermarket after a failed armoured-car robbery",
+      "sources": [
+        {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/amp/news/2026/11/24/hostage-situation-reported-in-colombia-as-armed-men-flee-into-supermarket"},
+        {"outlet": "AP", "when": "24 Nov 2026, 17:43 UTC", "url": "https://apnews.com/article/colombia-cartagena-supermarket-hostages-e6a51ff5bad1e07c4b6c52a110eb666b"}
+      ]
+    },
+    {
+      "n": 7, "region": "ASIA", "keyword": "JAPAN", "scene": "japan",
+      "detail": "Pays 2027 ICC dues early", "lon": 139.7, "lat": 35.7,
+      "title": "Japan to pay its full 2027 ICC contribution early, as US sanctions squeeze the court",
+      "sources": [
+        {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/americas/japan-accelerates-icc-funding-us-sanctions-threaten-court-2026-11-24/"},
+        {"outlet": "AP", "when": "24 Nov 2026, 11:49 UTC", "url": "https://apnews.com/article/japan-icc-takaichi-akane-sanctions-bbb7371ca6eb08710b5c2d50ee1cbb2c"}
+      ]
+    },
+    {
+      "n": 8, "region": "ASIA", "keyword": "SOUTH KOREA", "scene": "korea",
+      "detail": "Russian jets, air-raid alert", "lon": 130.9, "lat": 37.5,
+      "title": "South Korea reports several Russian aircraft in its air defence zone near Ulleung Island; brief alert",
+      "sources": [
+        {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/why-s-korea-issued-air-raid-alert-after-russian-jets-flew-near-its-airspace"},
+        {"outlet": "AP", "when": "page header: Updated 10:23 AM GMT+7, 24 Nov 2026", "url": "https://apnews.com/article/south-north-korea-tensions-airspace-ulleung-island-a0347d1dda863d8189bbdf21c320ee3b"}
+      ]
+    }
+  ],
+  "list": [
+    {"n": 9, "region": "ASIA", "text": "Hanoi hot-pot restaurant blast: at least 6 dead", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/asia-pacific/explosion-kills-6-injures-10-vietnam-capital-hanoi-2026-11-24/"},
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/vietnam-restaurant-blast-kills-at-least-six"}]},
+    {"n": 10, "region": "EUROPE", "text": "Record 5,258 heat-linked deaths in England", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/business/environment/uk-records-highest-number-heat-related-deaths-2026-2026-11-24/"},
+      {"outlet": "BBC", "when": "24 Nov 2026, 16:22 UTC", "url": "https://www.bbc.com/news/articles/cq2e83egrez3o"}]},
+    {"n": 11, "region": "EUROPE", "text": "Die Linke expels Berlin MP over antisemitism claim", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/berlin-left-expels-lawmaker-accused-antisemitism-clearing-hurdle-coalition-talks-2026-11-24/"},
+      {"outlet": "AFP (copy via NAMPA)", "when": "dateline: Berlin, Nov 24, 2026 (AFP)", "url": "https://www.nampa.org/text/23074230"}]},
+    {"n": 12, "region": "OCEANIA", "text": "Parliament set to pass tech law: fines up to 5% of revenue", "sources": [
+      {"outlet": "AP", "when": "24 Nov 2026, 11:36 UTC", "url": "https://apnews.com/article/australia-digital-duty-care-law-parliament-ec75eeb559e67465a6dbb1720bbbabe3"},
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/australia-warns-tech-giants-of-multibillion-dollar-fines-for-online-harm"}]},
+    {"n": 13, "region": "MIDEAST", "text": "Houthi strike wounds 11 at Riyadh's tallest tower", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-says-tower-riyadh-finance-district-targeted-by-terrorist-2026-11-24/"},
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh"}]},
+    {"n": 14, "region": "MIDEAST", "text": "Houthis advance toward Aden; government forces dig in", "sources": [
+      {"outlet": "AP", "when": "24 Nov 2026, 10:34 UTC", "url": "https://apnews.com/article/mideast-iran-gaza-israel-houthis-libya-november-24-2026-ba01cb036a849ba69873da5000ee08d5"},
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/middle-east/houthis-wont-seize-aden-yemeni-government-forces-say-2026-11-24/"}]},
+    {"n": 15, "region": "MIDEAST", "text": "Israeli strikes in Khan Younis kill at least eight", "sources": [
+      {"outlet": "AP", "when": "24 Nov 2026, 10:34 UTC (photo caption and text)", "url": "https://apnews.com/article/mideast-iran-gaza-israel-houthis-libya-november-24-2026-ba01cb036a849ba69873da5000ee08d5"},
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date; one strike, at least three killed)", "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-least-three-palestinians-southern-gaza-medics-say-2026-11-24/"}]},
+    {"n": 16, "region": "AMERICAS", "text": "Kilmar Abrego Garcia leaves the US for Spain", "sources": [
+      {"outlet": "CNN", "when": "24 Nov 2026 (URL date)", "url": "https://www.cnn.com/2026/11/24/politics/kilmar-abrego-garcia-self-deporting-to-spain"},
+      {"outlet": "New York Times", "when": "24 Nov 2026 (URL date)", "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html"}]},
+    {"n": 17, "region": "WORLD", "text": "Sanofi to buy Insmed for $41 billion", "sources": [
+      {"outlet": "Sanofi (press release)", "when": "24 Nov 2026, 06:30 UTC", "url": "https://www.sanofi.com/en/media-room/press-releases/2026/2026-11-24-06-30-00-3409002"},
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/legal/litigation/sanofi-acquire-insmed-41-billion-deal-2026-11-24/"},
+      {"outlet": "Bloomberg", "when": "24 Nov 2026 (URL date)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/sanofi-seals-41-billion-insmed-deal-to-expand-in-immunology"}]},
+    {"n": 18, "region": "WORLD", "text": "Anthropic shares fall below $83 IPO price", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/"},
+      {"outlet": "Bloomberg", "when": "24 Nov 2026 (URL date)", "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading"},
+      {"outlet": "CNBC", "when": "24 Nov 2026 (URL date)", "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html"}]},
+    {"n": 19, "region": "WORLD", "text": "Bitcoin falls below $60,000 as ETF outflows hit a record", "sources": [
+      {"outlet": "The Motley Fool", "when": "24 Nov 2026 (URL date)", "url": "https://www.fool.com/coverage/stock-market-today/2026/11/24/crypto-market-today-nov-24-bitcoin-falls-below-usd60-000-as-etf-outflows-hit-a-record-usd4-7-billion/"},
+      {"outlet": "CoinDesk", "when": "24 Nov 2026 (URL date)", "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades"}]},
+    {"n": 20, "region": "OCEANIA", "text": "Solomon Islands scraps China security pact for Australia treaty", "sources": [
+      {"outlet": "CNN", "when": "24 Nov 2026 (URL date)", "url": "https://www.cnn.com/2026/11/24/australia/solomon-islands-australia-security-pact-intl-hnk"},
+      {"outlet": "New York Times", "when": "24 Nov 2026 (URL date)", "url": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html"},
+      {"outlet": "ABC (Australia)", "when": "24 Nov 2026 (URL date)", "url": "https://www.abc.net.au/news/2026-11-24/china-solomon-islands-security-pact-australia/107421976"}]},
+    {"n": 21, "region": "AFRICA", "text": "Cameroon separatist pleads not guilty at Oslo war-crimes trial", "sources": [
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/cameroon-separatist-leader-pleads-not-guilty-in-war-crimes-trial"},
+      {"outlet": "Africanews", "when": "24 Nov 2026 (URL date)", "url": "https://www.africanews.com/2026/11/24/cameroon-separatist-leader-pleads-not-guilty-at-norway-war-crimes-trial/"},
+      {"outlet": "AFP (copy via NAMPA)", "when": "dateline: Oslo, Nov 24, 2026 (AFP)", "url": "https://www.nampa.org/text/23073992"}]},
+    {"n": 22, "region": "AFRICA", "text": "Amnesty urges war-crimes probe into Alamata shelling", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/"}]},
+    {"n": 23, "region": "ASIA", "text": "Garment workers clash with police; pay protests shut factories", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/business/world-at-work/bangladesh-garment-workers-clash-with-police-pay-protests-shut-factories-2026-11-24/"}]},
+    {"n": 24, "region": "MIDEAST", "text": "Coalition warns civilians to leave Hodeidah port", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-issues-evacuation-warning-yemens-hodeidah-port-2026-11-24/"}]},
+    {"n": 25, "region": "EUROPE", "text": "Latvian president sees possible tipping point in Ukraine war", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/asia-pacific/latvian-president-sees-possible-tipping-point-ukraine-war-next-year-2026-11-24/"}]},
+    {"n": 26, "region": "EUROPE", "text": "Norway in dialogue with Ukraine on stability in its near areas", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/europe/norway-says-there-is-dialogue-with-ukraine-regarding-need-stability-our-near-2026-11-24/"}]},
+    {"n": 27, "region": "WORLD", "text": "Microsoft declares 'Code Red' after historic outage", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/"}]},
+    {"n": 28, "region": "WORLD", "text": "US stroke rate projected to nearly double by 2050", "sources": [
+      {"outlet": "Washington Post", "when": "24 Nov 2026 (URL date)", "url": "https://www.washingtonpost.com/wellness/2026/11/24/us-stroke-rate-projected-almost-double-by-2050/"}]},
+    {"n": 29, "region": "AMERICAS", "text": "Appeals court renews Trump bid for federal jurisdiction in hush-money case", "sources": [
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/appeals-court-renews-trump-bid-for-federal-jurisdiction-in-hush-money-case"}]},
+    {"n": 30, "region": "AMERICAS", "text": "Jennifer Barreto of Puerto Rico crowned Miss Universe", "sources": [
+      {"outlet": "USA Today", "when": "24 Nov 2026 (URL date)", "url": "https://www.usatoday.com/story/entertainment/style/2026/11/24/miss-universe-2026-winner/92923893007/"},
+      {"outlet": "Pasquines", "when": "24 Nov 2026 (URL date)", "url": "https://pasquines.us/2026/11/24/jennifer-barreto-puerto-rico-wins-miss-universe-2026/"}]}
+  ]
+}
