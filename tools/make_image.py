@@ -93,7 +93,8 @@ def star(cx, cy, r_out, r_in, n=24):
 
 
 # ---------------------------------------------------------------- scenes
-# Each scene fills a 226 x 92 box whose top-left corner is (x, y).
+# Each scene is drawn on a 226 x 92 canvas whose top-left corner is (x, y).
+# paste_scene() shrinks it into the panel.
 
 def scene_ukraine(d, x, y):
     rect(d, x, y, x + 226, y + 92, fill=(202, 212, 220))
@@ -245,8 +246,82 @@ def scene_germany(d, x, y):
     text(d, x + 10, y + 6, "Berlin", font("sans_b", 20))
 
 
+def scene_libya(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(200, 222, 232))
+    poly(d, [(x + 40, y + 60), (x + 190, y + 60), (x + 176, y + 76), (x + 54, y + 76)], fill=(70, 74, 80))
+    rect(d, x + 92, y + 40, x + 142, y + 60, fill=(110, 116, 122))
+    rect(d, x + 104, y + 30, x + 116, y + 40, fill=(110, 116, 122))
+    line(d, [(x + 116, y + 30), (x + 116, y + 18)], fill=(70, 74, 80), width=2)
+    poly(d, star(x + 52, y + 48, 22, 9, 14), fill=(240, 120, 30))
+    for i in range(6):
+        arc(d, x + 14 + i * 32, y + 78, x + 34 + i * 32, y + 96, 0, 180, (120, 160, 180), 2)
+    text(d, x + 10, y + 6, "Benghazi", font("sans_b", 20))
+
+
+def scene_australia(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(222, 232, 236))
+    poly(d, [(x + 96, y + 16), (x + 162, y + 16), (x + 162, y + 54), (x + 129, y + 86), (x + 96, y + 54)],
+         fill=(30, 80, 150))
+    poly(d, [(x + 104, y + 24), (x + 154, y + 24), (x + 154, y + 52), (x + 129, y + 77), (x + 104, y + 52)],
+         fill=(236, 240, 244))
+    text(d, x + 129, y + 48, "5%", font("serif_b", 26), fill=(30, 80, 150), anchor="mm")
+    text(d, x + 10, y + 6, "Tech law", font("sans_b", 20))
+
+
+def scene_riyadh(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(228, 226, 216))
+    rect(d, x + 70, y + 24, x + 104, y + 92, fill=(96, 110, 124))
+    rect(d, x + 112, y + 38, x + 142, y + 92, fill=(120, 134, 146))
+    for r in range(6):
+        for c in range(3):
+            rect(d, x + 76 + c * 9, y + 32 + r * 10, x + 81 + c * 9, y + 37 + r * 10, fill=(230, 236, 240))
+    poly(d, star(x + 96, y + 22, 18, 8, 14), fill=(240, 120, 30))
+    text(d, x + 10, y + 6, "Riyadh", font("sans_b", 20))
+
+
+def scene_yemen(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(230, 214, 178))
+    ell(d, x - 30, y + 62, x + 120, y + 120, fill=(214, 194, 154))
+    for bx0, bh in ((120, 18), (134, 26), (150, 14), (166, 22), (184, 16)):
+        rect(d, x + bx0, y + 60 - bh, x + bx0 + 12, y + 60, fill=(150, 130, 110))
+    line(d, [(x + 12, y + 74), (x + 40, y + 66), (x + 62, y + 78), (x + 90, y + 68), (x + 118, y + 80),
+             (x + 150, y + 70), (x + 180, y + 82), (x + 214, y + 72)], fill=(70, 52, 34), width=4)
+    text(d, x + 10, y + 6, "Aden", font("sans_b", 20))
+
+
+def scene_hormuz(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(200, 222, 232))
+    poly(d, [(x + 40, y + 64), (x + 186, y + 64), (x + 176, y + 80), (x + 52, y + 80)], fill=(60, 66, 72))
+    rect(d, x + 70, y + 54, x + 134, y + 64, fill=(180, 60, 40))
+    rect(d, x + 140, y + 46, x + 176, y + 64, fill=(220, 220, 220))
+    for fx, fh in ((80, 20), (96, 28), (112, 18)):
+        poly(d, [(x + fx - 7, y + 54), (x + fx, y + 54 - fh), (x + fx + 7, y + 54)], fill=(240, 120, 30))
+    for mx0, my0 in ((70, 86), (120, 88), (162, 84)):
+        ell(d, x + mx0 - 4, y + my0 - 4, x + mx0 + 4, y + my0 + 4, fill=INK)
+    text(d, x + 10, y + 6, "Hormuz", font("sans_b", 20))
+
+
+def scene_khan_younis(d, x, y):
+    rect(d, x, y, x + 226, y + 92, fill=(228, 220, 202))
+    rect(d, x + 40, y + 60, x + 84, y + 92, fill=(140, 132, 120))
+    rect(d, x + 88, y + 70, x + 124, y + 92, fill=(120, 112, 102))
+    poly(d, [(x + 124, y + 70), (x + 140, y + 60), (x + 150, y + 92), (x + 124, y + 92)], fill=(130, 122, 112))
+    for px in (x + 164, x + 180, x + 196):
+        ell(d, px - 4, y + 56, px + 4, y + 64, fill=INK)
+        line(d, [(px, y + 64), (px, y + 80)], fill=INK, width=2)
+        line(d, [(px - 6, y + 70), (px + 6, y + 70)], fill=INK, width=2)
+    text(d, x + 10, y + 6, "Khan Younis", font("sans_b", 20))
+
+
+def paste_scene(img, scene, x, y, w=178, h=70):
+    canvas = Image.new("RGB", (226 * SS, 92 * SS), WHITE)
+    scene(ImageDraw.Draw(canvas), 0, 0)
+    small = canvas.resize((w * SS, h * SS), Image.Resampling.LANCZOS)
+    img.paste(small, (x * SS, y * SS))
+
+
 # ---------------------------------------------------------------- map
-MAP_X, MAP_Y, MAP_W, MAP_H = 24, 214, 976, 226
+MAP_X, MAP_Y, MAP_W, MAP_H = 24, 170, 976, 214
 LON0, LON1, LAT_TOP = -85.0, 150.0, 58.0
 K = MAP_W / (LON1 - LON0)                # px per degree, same on both axes
 
@@ -344,7 +419,7 @@ def draw_map(img):
     for lon in range(-60, 151, 30):
         xx = (mx(lon) - MAP_X) * SS
         dm.line([(xx, 0), (xx, MAP_H * SS)], fill=GRID, width=SS)
-    for lat in range(0, 59, 10):
+    for lat in range(10, 59, 10):
         yy = (my(lat) - MAP_Y) * SS
         dm.line([(0, yy), (MAP_W * SS, yy)], fill=GRID, width=SS)
     for shape in (EURASIA, AFRICA, AMERICAS_N, MEXICO_CENTRAL, SOUTH_AMERICA_N, *ISLANDS):
@@ -354,78 +429,100 @@ def draw_map(img):
     img.paste(layer, (MAP_X * SS, MAP_Y * SS))
 
 
-def pin(d, n, lon, lat):
-    cx, cy = mx(lon), my(lat)
+def pin(d, n, lon, lat, dx=0, dy=0, note=None):
+    """Numbered pin. Off-map points are pinned to the map edge with a note."""
+    x0 = min(max(mx(lon), MAP_X + 26), MAP_X + MAP_W - 26)
+    y0 = min(max(my(lat), MAP_Y + 24), MAP_Y + MAP_H - 24)
+    cx, cy = x0 + dx, y0 + dy
+    if dx or dy:
+        line(d, [(x0, y0), (cx, cy)], fill=RED, width=2)
     ell(d, cx - 12, cy - 12, cx + 12, cy + 12, fill=RED, outline=WHITE, width=2)
     text(d, cx, cy, str(n), font("sans_b", 16), fill=WHITE, anchor="mm")
+    if note:
+        text(d, cx - 18, cy, note, font("sans_b", 15), fill=INK, anchor="rm")
 
 
 # ---------------------------------------------------------------- stories
 # (number, keyword, scene, two detail lines, pin longitude, pin latitude)
 STORIES = [
-    (1, "UKRAINE", scene_ukraine, ("Zaporizhzhia flats hit:", "2 killed, dozens wounded"), 35.1, 47.8),
+    (1, "UKRAINE", scene_ukraine, ("Zaporizhzhia flats hit:", "2 killed, dozens hurt"), 35.1, 47.8),
     (2, "BANGLADESH", scene_bangladesh, ("Ex-PM Hasina plans to", "return on 16 Dec"), 90.4, 23.8),
     (3, "GAZA", scene_gaza, ("Hamas security chief", "Naeem Abu Nahel killed"), 34.5, 31.5),
     (4, "TURKEY", scene_turkey, ("Military helicopter", "crash: 5 crew killed"), 30.5, 39.8),
-    (5, "AFRICA CUP", scene_afcon, ("Court restores Senegal's", "AFCON 2025 title"), -17.4, 14.7),
+    (5, "AFRICA CUP", scene_afcon, ("CAS restores Senegal's", "AFCON 2025 title"), -17.4, 14.7),
     (6, "COLOMBIA", scene_colombia, ("Hostages held in a", "Cartagena supermarket"), -75.5, 10.4),
-    (7, "JAPAN", scene_japan, ("Pays 2027 ICC dues early", "amid US sanctions"), 139.7, 35.7),
+    (7, "JAPAN", scene_japan, ("Pays 2027 ICC dues", "early amid US sanctions"), 139.7, 35.7),
     (8, "SOUTH KOREA", scene_korea, ("Russian aircraft enter", "air-defence zone; alert"), 130.9, 37.5),
     (9, "VIETNAM", scene_vietnam, ("Hanoi restaurant blast:", "at least 6 dead"), 105.8, 21.0),
-    (10, "ENGLAND", scene_england, ("Record 5,258 heat-linked", "deaths this summer"), -0.1, 51.5),
-    (11, "GERMANY", scene_germany, ("Left party expels Berlin", "MP accused of antisemitism"), 13.4, 52.5),
+    (10, "ENGLAND", scene_england, ("Record 5,258 heat", "deaths this summer"), -0.1, 51.5),
+    (11, "GERMANY", scene_germany, ("Berlin MP accused of", "antisemitism; expelled"), 13.4, 52.5),
+    (12, "LIBYA", scene_libya, ("Kyiv: Libya ship attack", "was self-defence"), 20.1, 32.1),
+    (13, "AUSTRALIA", scene_australia, ("Parliament set to pass", "tech fines up to 5%"), 149.1, -35.3),
+    (14, "RIYADH", scene_riyadh, ("Houthi strike, 11 hurt,", "Riyadh's tallest tower"), 46.7, 24.7),
+    (15, "YEMEN", scene_yemen, ("Houthis advance toward", "Aden; forces dig in"), 45.0, 12.8),
+    (16, "HORMUZ", scene_hormuz, ("Iran says three tankers", "hit mines, caught fire"), 56.3, 26.5),
+    (17, "KHAN YOUNIS", scene_khan_younis, ("Israeli strikes in Khan", "Younis kill at least 8"), 34.3, 31.35),
 ]
-COL_X = [24, 270, 516, 762]
-ROW_Y = [452, 636, 820]
-PW, PH = 238, 176
+COL_X = [24, 220, 416, 612, 808]
+ROW_Y = [392, 546, 700, 854]
+PW, PH = 188, 146
 
 
-def panel(d, n, key, scene, lines, x, y):
+def panel(d, img, n, key, scene, lines, x, y):
     rect(d, x, y, x + PW, y + PH, fill=PANEL, outline=INK, width=2)
-    scene(d, x + 6, y + 6)
-    ell(d, x + 8, y + 104, x + 32, y + 128, fill=RED, outline=WHITE, width=1)
-    text(d, x + 20, y + 116, str(n), font("sans_b", 16), fill=WHITE, anchor="mm")
-    text(d, x + 40, y + 104, key, font("sans_b", 24))
+    paste_scene(img, scene, x + 5, y + 5)
+    ell(d, x + 5, y + 77, x + 27, y + 99, fill=RED, outline=WHITE, width=1)
+    text(d, x + 16, y + 88, str(n), font("sans_b", 14), fill=WHITE, anchor="mm")
+    text(d, x + 33, y + 80, key, font("sans_b", 19))
     for i, s in enumerate(lines):
-        text(d, x + 10, y + 137 + i * 19, s, font("sans", 17))
+        text(d, x + 7, y + 105 + i * 17, s, font("sans", 15))
 
 
 def main():
     img = Image.new("RGB", (W * SS, H * SS), PAPER)
     d = ImageDraw.Draw(img)
+    count = len(STORIES)
 
     # masthead
-    rect(d, 24, 22, 1000, 26, fill=INK)
-    text(d, 24, 36, "THE WORLD IN ONE DAY", font("sans_b", 22), fill=RED)
-    text(d, 1000, 36, "24.11.2026", font("sans_b", 22), fill=INK, anchor="ra")
+    rect(d, 24, 22, 1000, 25, fill=INK)
+    text(d, 24, 34, "THE WORLD IN ONE DAY", font("sans_b", 22), fill=RED)
+    text(d, 1000, 34, "24.11.2026", font("sans_b", 22), fill=INK, anchor="ra")
     date_line = "Tuesday 24 November 2026"
-    text(d, 24, 54, date_line, fit_font("serif_b", date_line, 976, 76, 40))
-    sub = "11 stories, each reported on 24 November 2026 by two of AP, Reuters, AFP, BBC, Al Jazeera"
-    text(d, 24, 150, sub, fit_font("sans", sub, 976, 20, 14))
-    rect(d, 24, 184, 1000, 187, fill=INK)
+    text(d, 24, 50, date_line, fit_font("serif_b", date_line, 976, 76, 40))
+    sub = f"{count} stories, each reported on 24 November 2026 by two of AP, Reuters, AFP, BBC, Al Jazeera"
+    text(d, 24, 136, sub, fit_font("sans", sub, 976, 20, 14))
+    rect(d, 24, 164, 1000, 167, fill=INK)
 
     # map with numbered pins
     draw_map(img)
-    rect(d, MAP_X + 6, MAP_Y + 6, MAP_X + 230, MAP_Y + 32, fill=PANEL)
-    text(d, MAP_X + 14, MAP_Y + 10, "WHERE IT HAPPENED", font("sans_b", 18))
+    rect(d, MAP_X + 6, MAP_Y + 6, MAP_X + 226, MAP_Y + 30, fill=PANEL)
+    text(d, MAP_X + 14, MAP_Y + 9, "WHERE IT HAPPENED", font("sans_b", 18))
     for n, _key, _scene, _lines, lon, lat in STORIES:
-        pin(d, n, lon, lat)
+        if n == 3:
+            pin(d, n, lon, lat)
+        elif n == 17:
+            pin(d, n, lon, lat, dx=30, dy=22)
+        elif n == 13:
+            pin(d, n, lon, lat, note="Australia (off map)")
+        else:
+            pin(d, n, lon, lat)
 
-    # story panels, 4 per row; slot 12 is a key
+    # story panels: 5 per row; the last row has two panels and a key
     for i, (n, key, scene, lines, _lon, _lat) in enumerate(STORIES):
-        panel(d, n, key, scene, lines, COL_X[i % 4], ROW_Y[i // 4])
-    kx, ky = COL_X[3], ROW_Y[2]
-    rect(d, kx, ky, kx + PW, ky + PH, fill=PANEL, outline=INK, width=2)
-    text(d, kx + 14, ky + 18, "How to read", font("sans_b", 22))
-    for i, s in enumerate(("Numbers match the pins.", "Each story: two outlets,",
-                           "dated 24 Nov 2026.", "Sources: README.md.")):
-        text(d, kx + 14, ky + 60 + i * 26, s, font("sans", 18))
+        panel(d, img, n, key, scene, lines, COL_X[i % 5], ROW_Y[i // 5])
+    kx = COL_X[2]
+    rect(d, kx, ROW_Y[3], COL_X[4] + PW, ROW_Y[3] + PH, fill=PANEL, outline=INK, width=2)
+    text(d, kx + 14, ROW_Y[3] + 12, "How to read", font("sans_b", 22))
+    for i, s in enumerate(("Numbers match the pins. Every story has two sources",
+                           "from AP, Reuters, AFP, BBC or Al Jazeera, dated 24 Nov 2026.",
+                           "Full sources, links and dates: README.md.")):
+        text(d, kx + 14, ROW_Y[3] + 50 + i * 26, s, font("sans", 18))
 
     text(d, 24, 1004, "Source list, links and dates: README.md in this repository.", font("sans", 16), fill=MUTED)
 
     img = img.resize((W, H), Image.Resampling.LANCZOS)
     img.save(OUT, format="PNG", optimize=True)
-    print("wrote", OUT, img.size, os.path.getsize(OUT), "bytes")
+    print("wrote", OUT, img.size, os.path.getsize(OUT), "bytes", count, "stories")
 
 
 if __name__ == "__main__":
