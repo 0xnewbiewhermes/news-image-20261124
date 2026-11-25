@@ -38,22 +38,41 @@ base.MAP_Y, base.MAP_H = 236, 180
 
 # Short one-line texts for the list (full titles stay in stories.json for the README).
 SHORT = {
-    12: "Australia tech law: fines up to 5% of revenue",
-    14: "Houthis advance toward Aden; forces dig in",
-    19: "Bitcoin below $60,000; ETF outflows hit a record",
-    20: "Solomons scraps China pact for Australia treaty",
-    21: "Cameroon separatist pleads not guilty in Oslo",
-    22: "Amnesty urges probe of Alamata shelling",
-    23: "Garment workers clash with police over pay",
-    25: "Latvia: Ukraine war may reach tipping point",
-    26: "Norway in dialogue with Ukraine on stability",
-    27: "Microsoft declares 'Code Red' after outage",
-    29: "Appeals court renews Trump hush-money bid",
-    30: "Puerto Rico's Jennifer Barreto is Miss Universe",
+    9: "Hanoi hot-pot blast: 6+ dead",
+    10: "England: 5,258 heat deaths",
+    11: "Die Linke expels Berlin MP",
+    12: "Tech law: fines up to 5%",
+    13: "Houthi strike: 11 hurt in Riyadh",
+    14: "Houthis advance toward Aden",
+    15: "Khan Younis strikes kill 8+",
+    16: "Abrego Garcia leaves for Spain",
+    17: "Sanofi to buy Insmed, $41bn",
+    18: "Anthropic below $83 IPO price",
+    19: "Bitcoin falls below $60,000",
+    20: "Solomons scraps China pact",
+    21: "Cameroon separatist, Oslo trial",
+    22: "Amnesty: probe Alamata shelling",
+    23: "Garment workers clash with police",
+    24: "Hodeidah port evacuation warning",
+    25: "Latvia: Ukraine tipping point",
+    26: "Norway dialogue with Ukraine",
+    27: "Microsoft 'Code Red' after outage",
+    28: "US stroke rate to double by 2050",
+    29: "Trump hush-money appeal bid",
+    30: "Miss Universe: Puerto Rico wins",
+    31: "Iran's rial hits record low",
+    32: "Trump to unveil new tariffs",
+    33: "Yemen: strike on buses kills 25+",
+    34: "Blue Nile: thousands displaced",
+    35: "Netanyahu's UTJ talks fail",
+    36: "Canada: 'does not report to US'",
+    37: "Excavator near Himalayan lake",
 }
 
 
 def tag_of(item):
+    if item.get("claim"):
+        return "CL"
     return "C" if len(item["sources"]) >= 2 else "R"
 
 
@@ -100,23 +119,26 @@ ABBR = {
     "AFP (copy via NAMPA)": "AFP", "CNN": "CNN", "New York Times": "NYT", "Washington Post": "WaPo",
     "USA Today": "USAT", "Pasquines": "PQ", "Africanews": "AFRI", "ABC (Australia)": "ABC",
     "Sanofi (press release)": "SANOFI", "Bloomberg": "BBG", "CNBC": "CNBC", "The Motley Fool": "FOOL",
-    "CoinDesk": "CD",
+    "CoinDesk": "CD", "Al Arabiya": "ARAB", "Iran International": "IRINT", "Sudan Tribune": "STRIB",
+    "The Insight International": "INSIGHT", "Times of Israel": "TOI", "The Guardian": "GUARD",
+    "Gulf Today": "GT", "AFP (copy via BSS)": "AFP", "Politico": "POL", "Sanofi (press release)": "SANOFI",
 }
 
 
 def source_label(item):
+    if item.get("claim"):
+        return "CL"
     names = [ABBR.get(s["outlet"], s["outlet"][:6].upper()) for s in item["sources"][:2]]
     return "+".join(names)
 
 
-def draw_item(d, item, x, y, width=488):
-    base.text(d, x, y, str(item["n"]), base.font("sans_b", 15))
-    base.text(d, x + 30, y + 2, item["region"], base.font("sans_b", 11), fill=MUTED)
+def draw_item(d, item, x, y, width=316):
+    base.text(d, x, y, str(item["n"]), base.font("sans_b", 14))
     label = source_label(item)
     badge_w = base.font("sans_b", 11).getlength(label) / SS + 12
     text = SHORT.get(item["n"], item.get("text", ""))
-    max_w = width - 104 - badge_w - 10
-    base.text(d, x + 104, y, text, base.fit_font("sans", text, max_w, 15, 12))
+    max_w = width - 34 - badge_w - 8
+    base.text(d, x + 30, y, text, base.fit_font("sans", text, max_w, 14, 11))
     t = tag_of(item)
     bx, by = x + width - badge_w, y - 1
     base.rect(d, bx, by, x + width, by + 18, fill=INK if t == "C" else PANEL, outline=INK, width=1)
@@ -146,7 +168,7 @@ def main():
 
     # numbers strip
     tiles = [(str(count), "stories"), (str(len(regions)), "regions"),
-             (str(c_count), "with 2+ outlets"), (str(r_count), "with one outlet")]
+             (str(c_count), "with 2+ outlets"), (str(r_count), "one outlet or claim")]
     tw = (976 - 3 * 8) / 4
     for i, (num, label) in enumerate(tiles):
         x = 24 + i * (tw + 8)
@@ -169,20 +191,22 @@ def main():
         draw_lead(d, img, lead, cols[i % 4], rows[i // 4])
 
     # the list: two columns
-    base.text(d, 24, 694, f"ALSO ON THE DAY: {len(items)} MORE, BY REGION", base.font("sans_b", 18))
+    base.text(d, 24, 694, f"ALSO ON THE DAY: {len(items)} MORE", base.font("sans_b", 18))
     base.rect(d, 24, 718, 1000, 719, fill=INK)
-    half = (len(items) + 1) // 2
+    per_col = 10
+    col_x = [24, 354, 684]
     for k, item in enumerate(items):
-        col, row = (0, k) if k < half else (1, k - half)
-        x = 24 if col == 0 else 524
-        draw_item(d, item, x, 728 + row * 22.5, width=476)
+        col, row = k // per_col, k % per_col
+        draw_item(d, item, col_x[col], 728 + row * 22.5, width=316)
 
     # date check box: what was left out as earlier news, and how to read the tags
-    base.rect(d, 24, 978, 1000, 1018, fill=PANEL, outline=INK, width=1)
-    base.text(d, 32, 983, "DATE CHECK  Left out as earlier news: Hormuz tanker claim (Mon 23 Nov), Libya ship attack (22 Nov),",
-              base.fit_font("sans", "DATE CHECK  Left out as earlier news: Hormuz tanker claim (Mon 23 Nov), Libya ship attack (22 Nov),", 960, 14, 11))
-    base.text(d, 32, 1000, "Trump executions order (23 Nov), Huang back at Nvidia (23 Nov), Estonia threat (23 Nov).  C = 2+ outlets, R = 1 outlet.",
-              base.fit_font("sans", "Trump executions order (23 Nov), Huang back at Nvidia (23 Nov), Estonia threat (23 Nov).  C = 2+ outlets, R = 1 outlet.", 960, 14, 11))
+    line1 = ("DATE CHECK  Left out as earlier news: Hormuz tanker claim (Mon 23 Nov), Libya ship attack (22 Nov),"
+             " Trump executions order (23 Nov),")
+    line2 = ("Huang back at Nvidia (23 Nov), Estonia threat (23 Nov), Indonesia candy-factory fire (22-23 Nov).   "
+             "C = 2+ outlets, R = 1 outlet, CL = one side's claim")
+    base.rect(d, 24, 972, 1000, 1018, fill=PANEL, outline=INK, width=1)
+    base.text(d, 32, 977, line1, base.fit_font("sans", line1, 960, 14, 11))
+    base.text(d, 32, 997, line2, base.fit_font("sans", line2, 960, 14, 11))
 
     img = img.resize((W, H), Image.Resampling.LANCZOS)
     img.save(OUT, format="PNG", optimize=True)

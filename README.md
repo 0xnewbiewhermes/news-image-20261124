@@ -12,10 +12,10 @@ Tuesday 24 November 2026. `main.ts` copies the image to `MAKEFUN_OUTPUT_DIR`.
 
 ## What the page says
 
-- 30 items, each an event that happened or was first reported on 24 November 2026.
-- 8 illustrated leads with numbered pins, and 22 one-line items by region.
+- 37 items, each an event that happened or was first reported on 24 November 2026.
+- 8 illustrated leads with numbered pins, and 29 one-line items in three columns.
 - Each item carries a tag. `C` means two or more outlets report it. `R` means one
-  outlet reports it. The tags replace the brief's rule that every item needs
+  outlet reports it. `CL` marks a claim by one side, shown as a claim. The tags replace the brief's rule that every item needs
   two of AP, Reuters, AFP, BBC and Al Jazeera. The change was approved by the
   entry owner. Items that could not be dated to 24 November were left out.
 
@@ -59,6 +59,13 @@ date in the URL when the page could not be read. Checked on 25 and 26 November
 | 28 | US stroke rate projected to nearly double by 2050 | R | Washington Post, 24 Nov 2026 (URL date): https://www.washingtonpost.com/wellness/2026/11/24/us-stroke-rate-projected-almost-double-by-2050/ |
 | 29 | Appeals court renews Trump bid for federal jurisdiction in hush-money case | R | Al Jazeera, 24 Nov 2026 (URL date): https://www.aljazeera.com/news/2026/11/24/appeals-court-renews-trump-bid-for-federal-jurisdiction-in-hush-money-case |
 | 30 | Jennifer Barreto of Puerto Rico crowned Miss Universe | C | USA Today, 24 Nov 2026 (URL date): https://www.usatoday.com/story/entertainment/style/2026/11/24/miss-universe-2026-winner/92923893007/; Pasquines, 24 Nov 2026 (URL date): https://pasquines.us/2026/11/24/jennifer-barreto-puerto-rico-wins-miss-universe-2026/ |
+| 31 | Iran's rial hits record low | C | Al Arabiya, 24 Nov 2026 (URL date): https://english.alarabiya.net/News/middle-east/2026/11/24/iran-currency-plunges-after-fresh-us-sanctions; Iran International, 24 Nov 2026 (URL date): https://www.iranintl.com/en/202611246967 |
+| 32 | Trump to unveil new tariffs | C | Reuters, 24 Nov 2026 (URL date): https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/; Politico, 24 Nov 2026 (URL date): https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685 |
+| 33 | Yemen: strike on buses kills 25+ | CL | AFP (copy via BSS), dateline: Sanaa, Nov 24, 2026 (BSS/AFP); figures from Yemeni officials: https://www.bssnews.net/international/449523; Gulf Today, 24 Nov 2026 (URL date); figures from Houthi media: https://www.gulftoday.ae/news/2026/11/24/25-dead-or-missing-after-saudi-strikes-in-yemen-houthi-media |
+| 34 | Blue Nile: thousands displaced | C | Sudan Tribune, dateline: Ed Damazin, November 24, 2026: https://sudantribune.com/article/321584; The Insight International, 24 Nov 2026 (URL date): https://theinsightinternational.com/sudan-blue-nile-siha-28-women-girls-abducted-sexual-violence-girls-november-24/ |
+| 35 | Netanyahu's UTJ talks fail | R | Times of Israel, 24 Nov 2026 (URL date, live blog): https://www.timesofisrael.com/liveblog-november-24-2026/ |
+| 36 | Canada: 'does not report to US' | R | The Guardian, 24 Nov 2026 (URL date): https://www.theguardian.com/world/2026/nov/24/canada-sovereign-nation-us-relations-defence-pentagon-memo |
+| 37 | Excavator near Himalayan lake | R | Al Jazeera, 24 Nov 2026 (URL date, video page): https://www.aljazeera.com/video/newsfeed/2026/11/24/24-11-sv-sheshnag-lake-excavators-kashmir |
 
 <!-- sources:end -->
 

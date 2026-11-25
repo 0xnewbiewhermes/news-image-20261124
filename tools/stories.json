@@ -138,6 +138,24 @@
       {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date)", "url": "https://www.aljazeera.com/news/2026/11/24/appeals-court-renews-trump-bid-for-federal-jurisdiction-in-hush-money-case"}]},
     {"n": 30, "region": "AMERICAS", "text": "Jennifer Barreto of Puerto Rico crowned Miss Universe", "sources": [
       {"outlet": "USA Today", "when": "24 Nov 2026 (URL date)", "url": "https://www.usatoday.com/story/entertainment/style/2026/11/24/miss-universe-2026-winner/92923893007/"},
-      {"outlet": "Pasquines", "when": "24 Nov 2026 (URL date)", "url": "https://pasquines.us/2026/11/24/jennifer-barreto-puerto-rico-wins-miss-universe-2026/"}]}
+      {"outlet": "Pasquines", "when": "24 Nov 2026 (URL date)", "url": "https://pasquines.us/2026/11/24/jennifer-barreto-puerto-rico-wins-miss-universe-2026/"}]},
+    {"n": 31, "region": "MIDEAST", "text": "Iran's rial hits record low", "sources": [
+      {"outlet": "Al Arabiya", "when": "24 Nov 2026 (URL date)", "url": "https://english.alarabiya.net/News/middle-east/2026/11/24/iran-currency-plunges-after-fresh-us-sanctions"},
+      {"outlet": "Iran International", "when": "24 Nov 2026 (URL date)", "url": "https://www.iranintl.com/en/202611246967"}]},
+    {"n": 32, "region": "WORLD", "text": "Trump to unveil new tariffs", "sources": [
+      {"outlet": "Reuters", "when": "24 Nov 2026 (URL date)", "url": "https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/"},
+      {"outlet": "Politico", "when": "24 Nov 2026 (URL date)", "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685"}]},
+    {"n": 33, "region": "MIDEAST", "text": "Yemen: strike on buses kills 25+", "claim": true, "sources": [
+      {"outlet": "AFP (copy via BSS)", "when": "dateline: Sanaa, Nov 24, 2026 (BSS/AFP); figures from Yemeni officials", "url": "https://www.bssnews.net/international/449523"},
+      {"outlet": "Gulf Today", "when": "24 Nov 2026 (URL date); figures from Houthi media", "url": "https://www.gulftoday.ae/news/2026/11/24/25-dead-or-missing-after-saudi-strikes-in-yemen-houthi-media"}]},
+    {"n": 34, "region": "AFRICA", "text": "Blue Nile: thousands displaced", "sources": [
+      {"outlet": "Sudan Tribune", "when": "dateline: Ed Damazin, November 24, 2026", "url": "https://sudantribune.com/article/321584"},
+      {"outlet": "The Insight International", "when": "24 Nov 2026 (URL date)", "url": "https://theinsightinternational.com/sudan-blue-nile-siha-28-women-girls-abducted-sexual-violence-girls-november-24/"}]},
+    {"n": 35, "region": "MIDEAST", "text": "Netanyahu's UTJ talks fail", "sources": [
+      {"outlet": "Times of Israel", "when": "24 Nov 2026 (URL date, live blog)", "url": "https://www.timesofisrael.com/liveblog-november-24-2026/"}]},
+    {"n": 36, "region": "AMERICAS", "text": "Canada: 'does not report to US'", "sources": [
+      {"outlet": "The Guardian", "when": "24 Nov 2026 (URL date)", "url": "https://www.theguardian.com/world/2026/nov/24/canada-sovereign-nation-us-relations-defence-pentagon-memo"}]},
+    {"n": 37, "region": "ASIA", "text": "Excavator near Himalayan lake", "sources": [
+      {"outlet": "Al Jazeera", "when": "24 Nov 2026 (URL date, video page)", "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/24-11-sv-sheshnag-lake-excavators-kashmir"}]}
   ]
 }
